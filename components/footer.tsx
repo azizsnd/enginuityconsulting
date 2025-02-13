@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Twitter, Instagram } from "lucide-react"
+import { Facebook, Twitter, Instagram , Linkedin} from "lucide-react"
 import Image from "next/image"
 
 export default function Footer() {
@@ -35,10 +35,10 @@ export default function Footer() {
                                     <Facebook className="w-5 h-5" />
                                 </Link>
                                 <Link href="#" className="hover:text-gray-400">
-                                    <Twitter className="w-5 h-5" />
+                                    <Linkedin className="w-5 h-5" />
                                 </Link>
                                 <Link href="#" className="hover:text-gray-400">
-                                    <Instagram className="w-5 h-5" />
+                                    <Twitter className="w-5 h-5" />
                                 </Link>
                             </div>
                         </div>
@@ -50,27 +50,27 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm text-gray-400">
                             <li>
                                 <Link href="#" className="hover:text-white">
-                                    Marketing Strategy
+                                    Service 1
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className="hover:text-white">
-                                    Financial management
+                                     Service 2
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className="hover:text-white">
-                                    Business Strategy
+                                     Service 3
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className="hover:text-white">
-                                    Sales and Marketing
+                                      Service 4 
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className="hover:text-white">
-                                    Human Resources
+                                    Service 5 
                                 </Link>
                             </li>
                         </ul>
@@ -100,11 +100,11 @@ export default function Footer() {
                     <div className="space-y-4">
                             <h3 className="font-semibold">Address</h3>
                             <p className="text-sm text-gray-400">
-                                8592 Fairground
+                                somewhere
                                 <br />
-                                St. Tallahassee,
+                                somewhere
                                 <br />
-                                FL 32303
+                                fffff00
                             </p>
                     </div>
                     {/* Contact Column */}
@@ -113,20 +113,20 @@ export default function Footer() {
                             <h3 className="font-semibold">Email</h3>
                             <p className="text-sm text-gray-400">
                                 <Link href="mailto:teverett@optonline.net" className="hover:text-white">
-                                    teverett@optonline.net
+                                    admin@admin
                                 </Link>
                             </p>
                         </div>
                         <div className="space-y-2">
                             <h3 className="font-semibold">Phone</h3>
-                            <p className="text-sm text-gray-400">(863) 267-3634</p>
+                            <p className="text-sm text-gray-400">(000)0000000</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Copyright */}
                 <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
-                    <p>&copy;Copyright Business Consulting 2025.</p>
+                    <p>&copy;Copyright NOVADRIVE Consulting 2025.</p>
                 </div>
             </div>
         </footer>
