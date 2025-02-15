@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="bg-primary py-20 text-white min-h-screen">
       {/* Hero Section */}
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center min-h-[80vh]">
+      <div className="container mx-auto p-4 flex flex-col md:flex-row items-center justify-center">
 
         {/* Texte centré */}
         <div className="md:w-1/2 px-10 text-center md:text-left">
@@ -36,23 +36,23 @@ export default function Home() {
       </div>
 
       {/* Stats Section */}
-      <div className="container bg-white text-primary  mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <div>
-          <h2 className="text-3xl  font-bold">1k+</h2>
-          <p>Supported businesses</p>
+      <div className="bg-white text-primary w-full px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="flex gap-4 items-center justify-center md:flex-col">
+          <h2 className="text-4xl  font-bold">1k+</h2>
+          <p className='w-52'>Supported businesses</p>
         </div>
-        <div>
+        <div className="flex gap-4 items-center justify-center md:flex-col">
           <h2 className="text-4xl font-bold">1k+</h2>
-          <p>Projects done</p>
+          <p className='w-52'>Projects done</p>
         </div>
-        <div>
+        <div className="flex gap-4 items-center justify-center md:flex-col">
           <h2 className="text-4xl font-bold">4k+</h2>
-          <p>Clients worldwide</p>
+          <p className='w-52'>Clients worldwide</p>
         </div>
       </div>
 
       {/* Services Section */}
-      <div className="bg-gray-100 text-gray-900 py-16">
+      <div className="bg-background text-primary py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">What services do we offer for your business</h2>
           <p className="text-center text-lg mb-12">
@@ -105,7 +105,5 @@ export default function Home() {
 
 
     </div> 
-    
-    
   );
 }

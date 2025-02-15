@@ -71,13 +71,13 @@ export default function Header() {
                     </nav>
 
                     {/* Right Section remains unchanged */}
-                    <div className="flex items-center space-x-6 relative">
+                    <div className="hidden md:flex items-center space-x-6 relative">
                         <div className="relative">
                             <button
                                 className="flex items-center text-white hover:text-white/70 transition-colors gap-1"
                                 onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
                             >
-                                    {currentLocale.toUpperCase()}
+                                {currentLocale.toUpperCase()}
                                 <Languages className="w-5 h-5" />
                             </button>
 
@@ -88,8 +88,8 @@ export default function Header() {
                                             key={lang.code}
                                             onClick={() => changeLanguage(lang.code)}
                                             className={`w-full px-4 py-2 text-sm text-left flex justify-between items-center ${currentLocale === lang.code
-                                                    ? 'bg-gray-100 text-primary font-semibold'
-                                                    : 'text-gray-700 hover:bg-gray-50'
+                                                ? 'bg-gray-100 text-primary font-semibold'
+                                                : 'text-gray-700 hover:bg-gray-50'
                                                 }`}
                                         >
                                             {lang.name}
@@ -142,6 +142,40 @@ export default function Header() {
                                 Contact
                             </Link>
                         </nav>
+                        <div className="flex items-center justify-end space-x-6 relative mt-4">
+                            <div className="relative">
+                                <button
+                                    className="flex items-center text-white hover:text-white/70 transition-colors gap-1"
+                                    onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
+                                >
+                                    {currentLocale.toUpperCase()}
+                                    <Languages className="w-5 h-5" />
+                                </button>
+
+                                {isLanguageMenuOpen && (
+                                    <div className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-2">
+                                        {languages.map((lang) => (
+                                            <button
+                                                key={lang.code}
+                                                onClick={() => changeLanguage(lang.code)}
+                                                className={`w-full px-4 py-2 text-sm text-left flex justify-between items-center ${currentLocale === lang.code
+                                                    ? 'bg-gray-100 text-primary font-semibold'
+                                                    : 'text-gray-700 hover:bg-gray-50'
+                                                    }`}
+                                            >
+                                                {lang.name}
+                                                {currentLocale === lang.code && (
+                                                    <span className="text-primary">✓</span>
+                                                )}
+                                            </button>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                            <button className="border rounded-none border-white text-white p-2">
+                                Get in touch
+                            </button>
+                        </div>
                     </div>
                 )}
             </div>
