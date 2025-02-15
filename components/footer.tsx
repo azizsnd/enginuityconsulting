@@ -38,8 +38,11 @@ export default function Footer() {
                                     <Linkedin className="w-5 h-5" />
                                 </Link>
                                 <Link href="#" className="hover:text-gray-400">
-                                    <Twitter className="w-5 h-5" />
+                                    <Instagram className="w-5 h-5" />
                                 </Link>
+                                <Link href="#" className="hover:text-gray-400">
+                                    <Twitter className="w-5 h-5" />
+                                </Link>                                
                             </div>
                         </div>
                     </div>
